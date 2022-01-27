@@ -97,7 +97,7 @@ h1 {
 
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
-  filter: invert(34%) sepia(97%) saturate(1642%) hue-rotate(238deg) brightness(100%) contrast(102%);
+  filter: invert(34%) sepia(97%) saturate(1642%) hue-rotate(228deg) brightness(70%) contrast(102%);
   position: absolute;
   top: -198px;
   width: 6400px;
