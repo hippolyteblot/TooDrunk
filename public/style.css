@@ -49,7 +49,7 @@ body {
   position: absolute;
   padding: 2vh;
   left: 10vw;
-  top: 45vh;
+  bottom: 25vh;
   background-color: rgb(241, 241, 241);
   width: 40%;
   height: auto;
@@ -61,7 +61,6 @@ body {
 #presentation a {
   color: rgb(221, 221, 221);
   padding: 1.25vh;
-  margin: 2vh;
   border-radius: 25px;
   font-size: 2em;
   
@@ -77,6 +76,7 @@ body {
   z-index: 0;
   height: 60vh;
   width: 60vw;
+  max-height: 50%;
 
   background-image: url("Medias/bg1.jpg");
 }
