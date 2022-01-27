@@ -14,8 +14,8 @@ body {
   position: absolute;
   z-index: 1;
   content: " ";
-  height: 30vh;
-  width: 30vh;
+  height: 20vw;
+  width: 20vw;
   border-radius: 50%;
 }
 
@@ -49,7 +49,7 @@ body {
   position: absolute;
   padding: 2vh;
   left: 10vw;
-  bottom: 25vh;
+  bottom: 20vh;
   background-color: rgb(241, 241, 241);
   width: 40%;
   height: auto;
@@ -76,7 +76,7 @@ body {
   z-index: 0;
   height: 60vh;
   width: 60vw;
-  max-height: 50%;
+  max-height: 40%;
 
   background-image: url("Medias/bg1.jpg");
 }
@@ -181,5 +181,12 @@ a:hover{
   }
   70% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .circle{
+    width: 40vw;
+    height: 40vw;
   }
 }
