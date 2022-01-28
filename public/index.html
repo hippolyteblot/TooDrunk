@@ -9,35 +9,62 @@
     <script type="text/javascript" src="hover.js"></script>
   </head>
   <body>
+    <div id="main">
 
-    <div id="loader">
-      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      <div id="loader">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+      <div id="firstt">
+      <section id="begin-page">
+
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="img"></div>
+
+        <article id="presentation">
+          <h1>Too Drunk ?</h1>
+          <p>Bienvenue sur Too Drunk. Ce site te permet de calculer ton taux d'alcoolémie
+            approximatif à partir de ce que tu as bu. N'hésite pas à essayer !
+          </p>
+
+          <a class="HOVER" href="#clac1">
+          <text>Calculer</text>
+          </a>
+
+        </article>
+
+        <div class="ocean">
+          <div class="wave"></div>
+          <div id="clac1"></div>
+          <div class="wave"></div>
+        </div>
+      </section>
     </div>
 
-    <section id="begin-page">
+      <section id="calc">
+        <article>
+          <h2>Dis-nous en plus...</h2>
+          <div id="questions">
 
-      <div class="circle circle1"></div>
-      <div class="circle circle2"></div>
-      <div class="img"></div>
+            <p>Tu es ?</p>
+            <div class="rep">
+              <select id="country" name="country">
+                <option value="australia">Un homme</option>
+                <option value="canada">Une femme</option>
+              </select>
+              
+            </div>
 
-      <article id="presentation">
-        <h1>Too Drunk ?</h1>
-        <p>Bienvenue sur Too Drunk. Ce site te permet de calculer ton taux d'alcoolémie
-          approximatif à partir de ce que tu as bu. N'hésite pas à essayer !
-        </p>
+            <p>Tu pèses ? (sans vouloir être indiscret)</p>
+            <div class="rep">
+              <label><input type="number">Kg</label>
+            </div>
+          </div>
+        </article>
+      </section>
 
-        <a class="HOVER">
-        <text>Calculer</text>
-        </a>
 
-      </article>
-    </section>
-
-    <div class="ocean">
-      <div class="wave"></div>
-      <div class="wave"></div>
     </div>
-
   </body>
 </html>
 
