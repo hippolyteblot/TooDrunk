@@ -6,7 +6,7 @@
     <title>Too Drunk</title>
     <meta name="viewport" content="width=device-width, initial-scale=0.5 minimum-scale=0.5 maximum-scale=0.5">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="hover.js"></script>
+    
   </head>
   <body>
     <div id="main">
@@ -32,46 +32,48 @@
           </a>
 
         </article>
-
-        <div class="ocean">
-          <div class="wave"></div>
-          <div class="wave"></div>
-        </div>
         
         <div id="clac1"></div>
+        
       </section>
     </div>
+
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    
 
       <section id="calc">
         <article>
           <h2>Dis-nous en plus...</h2>
-          <div id="questions">
+          <div class="questions">
 
             <p>Tu es ?</p>
             <div class="rep">
-              <select id="country" name="country">
-                <option value="australia">Un homme</option>
-                <option value="canada">Une femme</option>
+              <select id="sexe">
+                <option value="h">Un homme</option>
+                <option value="f">Une femme</option>
               </select>
               
             </div>
 
             <p>Tu pèses ? (sans vouloir être indiscret)</p>
             <div class="rep">
-              <label><input type="number"> Kg</label>
+              <label><input type="number" id="poids"> Kg</label>
             </div>
 
             <p>Tu es à jeun ?</p>
             <div class="rep">
-              <select id="country" name="country">
-                <option value="australia">Oui</option>
-                <option value="canada">Non</option>
+              <select id="jeun">
+                <option value="1">Oui</option>
+                <option value="0">Non</option>
               </select>
               
             </div>
             <br>
 
-            <a class="HOVER2" href="#first">
+            <a class="HOVER2" href="#alcool">
               <text>On passe à l'alcool !</text>
               </a>
 
@@ -83,8 +85,45 @@
         <div class="wave"></div>
         <div class="wave"></div>
       </div>
+      <div id="alcool"></div>
 
+      <section id="drunked">
 
+        <article>
+          <h2>Qu-as tu bus ?</h2>
+          <div class="questions topast">
+            <div class="copie">
+              <p>Quel volume as-tu bus ?</p>
+              <div class="rep">
+                <label><input type="number" id="quantite"> cL</label>
+              </div>
+
+              <p>A quel degrés d'alcool était cette boisson ?</p>
+              <div class="rep">
+                <label><input type="number" id="degre"> ° d'alcool</label>
+              </div>
+            </div>
+          </div>
+
+          <button id="ajt-alcool">+</button>
+          <a id="last" href="#number-result">
+            <text>Résultat</text>
+          </a>
+          
+
+        </article>
+
+      </section>
+
+      <section id="result">
+
+        <article>
+          <h2>Tu as environ <span id="number-result"></span> grammes d'alcool dans le sang (à titre indicatif bien sûr)</h2>
+        </article>
+
+      </section>
+
+      <script type="text/javascript" src="hover.js"></script>
     </div>
   </body>
 </html>

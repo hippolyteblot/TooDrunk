@@ -56,7 +56,7 @@ body {
 #presentation p {
   font-size: 2em;
 }
-#presentation a {
+#presentation a, a {
   color: rgb(221, 221, 221);
   padding: 1.25vh;
   border-radius: 25px;
@@ -112,20 +112,49 @@ h2 {
   position: absolute;
   bottom: 10vh;
 }
-
+.questions p {
+  margin: 0.8em;
+}
 #calc {
   width: 100%;
-  height: 75vh;
+  padding-bottom: 2vh;
+  height: auto;
   position: relative;
-  top: 105vh;
   left: 0;
   display: flex;
   justify-content: center;
   background-color: #6C4DB4;
 }
+#alcool {
+  position: absolute;
+  top: 190vh;
+}
+button {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: none;
+  color: rgb(221, 221, 221);
+  height: 6vh;
+  width: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-size: 2em;
+  text-decoration: none;
 
-#first {
-  height: 100vh;
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius: 25px;
+  transition:.2s all; 
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.45);
+  
+  background: var(--couleur1); /* fallback color if gradients are not supported*/ 
+  background: linear-gradient(to right, var(--couleur1), var(--couleur2));
+}
+
+#firstt {
+  height: 105vh;
+  width: 100%;
 }
 
 section article {
@@ -133,22 +162,26 @@ section article {
   height: fit-content;
   background-color: rgb(241, 241, 241);
   border-radius: 20px;
+  margin: 2vh;
 }
 
 
 .ocean { 
+  position: relative;
   height: 5%;
   width: 105vw;
-  position:absolute;
-  bottom:-100px;
-  left:0;
   background-color: #6C4DB4;
 }
 .ocean2 {
-  top: 175vh;
   transform: rotate(180deg);
 }
-
+.copie {
+  border: solid #6C4DB4 3px;
+  border-radius: 25px;
+  width: 90%;
+  padding: 1vh;
+  margin: 1vh;
+}
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
   filter: invert(34%) sepia(97%) saturate(1642%) hue-rotate(228deg) brightness(70%) contrast(102%);
@@ -189,19 +222,14 @@ section article {
 
 
 
-a{
-  padding:30px;
-  margin:2%;
-  background:white;
+a {
   width:30%;
-  border:1px solid #d6d6d6;
   box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
-  border-radius:3px;
   transition:.2s all; 
   box-shadow:0 8px 20px 0px rgba(0,0,0,0.45);
 }
 
-a:hover{
+a:hover, button:hover{
   transform:scale(1);
   filter:blur(0px);
   opacity:0.8;
@@ -250,6 +278,11 @@ a:hover{
   }
 }
 
+#last {
+  padding: 15px;
+  margin: 30px;
+  margin-bottom: 50px;
+}
 
 
 .lds-roller {
@@ -343,7 +376,7 @@ a:hover{
 
 
 
-#questions {
+.questions {
   padding: 3vh;
   padding-top: 0;
   font-size: 30px;
@@ -358,5 +391,27 @@ input[type=text], input[type=number], select, textarea {
   font-size: 20px;
 }
 input[type=number] {
-  width: 5vh;
+  width: 5vw;
+}
+input, select {
+  margin-left: 5vh;
+}
+#drunked {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#drunked article {
+  margin-top: 30vh;
+  width: 80%;
+  height: fit-content;
+  padding-bottom: 5vh;
+}
+
+#result {
+  position: relative;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
 }
