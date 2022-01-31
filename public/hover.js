@@ -34,6 +34,25 @@ btn_result.addEventListener("click",() => {
   }
   var T = ((V * p * 0.8) / (K * m)) / 10;
   T = Math.round(T*100)/100;
+  if(T > 0){
+    var graph_data = [T-elim,
+      T-elim*0.5+(elim*0.5*jeun),
+      T-(elim*0.5*jeun),
+      T-elim*0.5-(elim*0.5*jeun),
+      T-elim-(elim*0.5*jeun),
+      T-elim*1.5-(elim*0.5*jeun),
+      T-elim*2-(elim*0.5*jeun),
+      T-elim*2.5-(elim*0.5*jeun),
+      T-elim*3-(elim*0.5*jeun),
+      T-elim*3.5-(elim*0.5*jeun),
+      T-elim*4-(elim*0.5*jeun),
+      T-elim*4.5-(elim*0.5*jeun),
+      T-elim*5-(elim*0.5*jeun)] 
+  }
+  else {
+    var graph_data = [0,0,0,0,0,0,0,0,0,0,0,0,0] 
+  }
+
 
   document.querySelector("#result").style.display = "flex";
   
@@ -46,19 +65,7 @@ btn_result.addEventListener("click",() => {
       datasets: [{
         type: 'line',
         label: "Gramme d'alcool par Litre de sang",
-        data: [T-elim,
-          T-elim*0.5+(elim*0.5*jeun),
-          T-(elim*0.5*jeun),
-          T-elim*0.5-(elim*0.5*jeun),
-          T-elim-(elim*0.5*jeun),
-          T-elim*1.5-(elim*0.5*jeun),
-          T-elim*2-(elim*0.5*jeun),
-          T-elim*2.5-(elim*0.5*jeun),
-          T-elim*3-(elim*0.5*jeun),
-          T-elim*3.5-(elim*0.5*jeun),
-          T-elim*4-(elim*0.5*jeun),
-          T-elim*4.5-(elim*0.5*jeun),
-          T-elim*5-(elim*0.5*jeun)],
+        data: graph_data,
         borderColor: '#6C4DB4',
         borderWidth: "4",
         tension: 0.3
@@ -68,6 +75,13 @@ btn_result.addEventListener("click",() => {
         data: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
         pointBorderWidth: 0,
         borderColor: 'rgb(0,0,0)',
+        borderWidth: "4",
+    },  {
+        type: 'line',
+        label: "Risque de mort",
+        data: [3.8,3.8,3.8,3.8,3.8,3.8,3.8,3.8,3.8,3.8,3.8,3.8,3.8],
+        pointBorderWidth: 0,
+        borderColor: 'rgb(200,0,0)',
         borderWidth: "4",
     }],
     labels: ["Ingestion de l'alcool", "",'1 heure',"", '2 heures', "", '3 heures', 
