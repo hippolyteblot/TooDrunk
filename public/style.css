@@ -181,6 +181,8 @@ section article {
   width: 90%;
   padding: 1vh;
   margin: 1vh;
+  padding-bottom: 15px;
+  padding-top: 0;
 }
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
@@ -412,6 +414,10 @@ input, select {
 #result {
   position: relative;
   margin-top: 10vh;
-  display: flex;
+  display: none;
   justify-content: center;
+}
+
+#graph {
+  margin: 10px;
 }
